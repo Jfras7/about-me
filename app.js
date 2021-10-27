@@ -19,8 +19,18 @@ if (videoGame.toLowerCase() == ('yes')){
 else{
     alert('WRONG!')
 }
-
-
-
-
+let military = prompt("Was I in the USAF?")
+if (military.toLowerCase() == ('yes')){
+    alert('Correct!')
+}
+else{
+    alert('WRONG!')
+}
+let space = prompt("Do I live in space?")
+if (space.toLowerCase() == ('yes')){
+    alert('Correct!')
+}
+else{
+    alert('WRONG!')
+}
 alert('See ya Later ' + userName)
