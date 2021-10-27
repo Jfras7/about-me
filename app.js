@@ -12,6 +12,14 @@ else{
     alert('WRONG!')
     //console.log('WRONG!')
 }
+let videoGame = prompt("Do I like video games?")
+if (videoGame.toLowerCase() == ('yes')){
+    alert('Correct!')
+}
+else{
+    alert('WRONG!')
+}
+
 
 
 
