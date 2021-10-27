@@ -6,10 +6,13 @@ alert('Welcome '+ userName)
 let sport = prompt("Do I watch the NFL?")
 if (sport.toLowerCase() == ('yes')){
     alert('Correct!')
-    console.log('Correct!')
+    //console.log('Correct!')
 } 
 else{
     alert('WRONG!')
-    console.log('WRONG!')
+    //console.log('WRONG!')
 }
 
+
+
+alert('See ya Later ' + userName)
