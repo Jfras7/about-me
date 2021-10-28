@@ -1,4 +1,5 @@
 'use strict'
+// Emily was here
 let counter = 0 
 let userName = prompt("What is your name?")
 alert('Welcome '+ userName)
