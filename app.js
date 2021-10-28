@@ -3,6 +3,7 @@ let counter = 0
 let userName = prompt("What is your name?")
 alert('Welcome '+ userName)
 
+function nfl(){
 let sport = prompt("Do I watch the NFL?")
 if (sport.toLowerCase() == ('yes')){
     alert('Correct!')
@@ -13,6 +14,10 @@ else{
     alert('WRONG!')
     console.log('WRONG!')
 }
+}
+ nfl();
+
+ function gaming(){
 let videoGame = prompt("Do I like video games?")
 if (videoGame.toLowerCase() == ('yes')){
     alert('Correct!')
@@ -21,6 +26,10 @@ if (videoGame.toLowerCase() == ('yes')){
 else{
     alert('WRONG!')
 }
+}
+gaming();
+
+function usaf(){
 let military = prompt("Was I in the USAF?")
 if (military.toLowerCase() == ('yes')){
     alert('Correct!')
@@ -29,6 +38,10 @@ if (military.toLowerCase() == ('yes')){
 else{
     alert('WRONG!')
 }
+}
+usaf();
+
+function cosmos(){
 let space = prompt("Do I live in space?")
 if (space.toLowerCase() == ('yes')){
     alert('Correct!')
@@ -37,6 +50,9 @@ if (space.toLowerCase() == ('yes')){
 else{
     alert('WRONG!')
 }
+}
+cosmos();
+
 let colorsAnswer = ['black', 'purple'];
 let guess = 6;
 
@@ -44,10 +60,12 @@ let guess = 6;
 // while guess is greater than 1 repeat the question
 // if answer is correct return
 // after while loop display correct answers
+function colorGame(){
 while(guess >= 1){
     let colors = prompt("What is one of my favorite colors?");
     if(colorsAnswer[0] == colors || colorsAnswer[1] == colors){
         alert('Correct');
+        counter++;
         break;} 
         
         else
@@ -58,8 +76,8 @@ while(guess >= 1){
     if(guess < 1){
         alert("The correct answers were " + colorsAnswer[0] + " and " + colorsAnswer[1])
     }
-
-
+}
+colorGame();
 
 // for(let i = 1; i <= guess; i++){
 //     if(colorsAnswer[0] == colors ||
@@ -92,6 +110,7 @@ function guessingGame(){
             // userGuess = parseInt(prompt('Wrong! Try Again between 20-40'));
             if(userGuess == correctAnswer){
                 alert('You Actually Did It!');
+                counter ++;
                 break
             } else if(userGuess > correctAnswer){
                 alert('You are to high!');
@@ -105,6 +124,8 @@ function guessingGame(){
 
 }
 
+
 guessingGame();
 
 alert('See ya Later ' + userName + " You got " + counter + " Right");
+
