@@ -57,10 +57,6 @@ cosmos();
 let colorsAnswer = ['black', 'purple'];
 let guess = 6;
 
-// give the user 6 guesses to get the right answer
-// while guess is greater than 1 repeat the question
-// if answer is correct return
-// after while loop display correct answers
 function colorGame(){
 while(guess >= 1){
     let colors = prompt("What is one of my favorite colors?");
@@ -80,20 +76,6 @@ while(guess >= 1){
 }
 colorGame();
 
-// for(let i = 1; i <= guess; i++){
-//     if(colorsAnswer[0] == colors ||
-//         colorsAnswer[1] == colors){
-//             alert('Correct')
-//             counter++;
-//             break;
-//         } else{
-//             alert('Wrong');
-//             colors = prompt("What is one of my favorite colors?");
-//             (guess < 1);
-//             alert('The correct answer is black or purple');
-//         }
-
-
 function guessingGame(){
     let correctAnswer = 33;
     console.log(correctAnswer);
@@ -108,7 +90,6 @@ function guessingGame(){
             userGuess = parseInt(prompt('Guess my Age. You have ' + guesses + ' guesses left!'));
             guesses = guesses - 1;
 
-            // userGuess = parseInt(prompt('Wrong! Try Again between 20-40'));
             if(userGuess == correctAnswer){
                 alert('You Actually Did It!');
                 counter ++;
